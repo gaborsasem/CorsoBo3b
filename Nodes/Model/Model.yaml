@@ -1,0 +1,9 @@
+Name: Model
+Id: g=5bf8bb71766121919b24712760703936
+Type: ModelCategoryFolder
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+- File: LoggerVariables/LoggerVariables.yaml
+- File: RecipeVariables/RecipeVariables.yaml

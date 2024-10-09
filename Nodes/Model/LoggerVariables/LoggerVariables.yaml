@@ -1,0 +1,15 @@
+Name: LoggerVariables
+Type: FolderType
+Children:
+- Name: LogVariable1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: LogVariable2
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: LogVariable3
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: LogVariable4
+  Type: BaseDataVariableType
+  DataType: Int32
