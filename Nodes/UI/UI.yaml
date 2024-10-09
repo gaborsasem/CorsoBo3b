@@ -868,19 +868,19 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"modifica testo 1"}
+      Value: {"LocaleId":"en-US","Text":"in basso a sinistra"}
     - Name: LeftMargin
       Id: g=4108554b7180d2c664466d5a1bd0ea3d
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 1023.0
+      Value: 64.0
     - Name: TopMargin
       Id: g=ae2e8c49a26b11cb478addba99e57415
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 24.0
+      Value: 704.0
     - Name: FontSize
       Id: g=efed556bcfb99cfd7f327bbb517fbc3b
       Type: BaseDataVariableType
