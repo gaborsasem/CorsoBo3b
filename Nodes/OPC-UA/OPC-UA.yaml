@@ -1,2 +1,44 @@
 Name: 'OPC-UA'
+Id: g=8360ff85dbc20931338d8c28e6d0a092
 Type: OPCUACategoryFolder
+Children:
+- Name: OPCUAServer
+  Id: g=4c6dbaddafd19290e04c673bd4842cb0
+  Type: OPCUAServer
+  Children:
+  - Name: EndpointURL
+    Id: g=23312a34ab4b00d3d27f5ee400650f91
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "opc.tcp://localhost:59100"
+  - Name: NodesToPublish
+    Id: g=041ce8c3f3792b388375146d09a30957
+    Type: BaseObjectType
+    Children:
+    - Name: Configuration1
+      Id: g=eff7d85bddd14e293eee7b61fa6780a7
+      Type: NodesToPublishConfigurationEntry
+      Children:
+      - Name: Nodes
+        Id: g=d010a82f1d81922326d654b3b056f3e4
+        Type: BaseObjectType
+      - Name: Users
+        Id: g=f3fc26625863c746c46dd6275f0d48d3
+        Type: BaseObjectType
+      - Name: PublishDynamicConfiguration
+        Id: g=4467da63ddebbadb2df0c32105d133e4
+        Type: BaseDataVariableType
+        DataType: Boolean
+  - Name: MinimumMessageSecurityMode
+    Id: g=d8746a9610c419e420d7c40906b9eb87
+    Type: PropertyType
+    DataType: MessageSecurityModeEnum
+  - Name: MinimumSecurityPolicy
+    Id: g=947d021981f29a150fa0faf6053382c6
+    Type: PropertyType
+    DataType: SecurityPolicyEnum
+  - Name: MaxNumberOfConnections
+    Id: g=d1a8628949837f7709871ea26ab3d5a6
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 5

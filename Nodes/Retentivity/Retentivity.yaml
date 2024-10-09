@@ -1,56 +1,71 @@
 Name: Retentivity
+Id: g=9d29b3cc775b7b786207f98634910ea8
 Type: RetentivityCategoryFolder
 Children:
 - Name: SecurityRetentivityStorage
+  Id: g=f1ab305ed6bce5af60c0dea9aa1e56ef
   Type: RetentivityStorage
   Children:
   - Name: Nodes
+    Id: g=445f7706c0d4a2c143898be5c671447f
     Type: BaseObjectType
     Children:
     - Name: Node1
+      Id: g=4afd7c5aca8c0b1367b5a5dd4fc3ad89
       Type: NodePointer
       DataType: NodeId
       Value: "/Objects/CorsoBo3b/Security"
       Children:
       - Name: Kind
+        Id: g=a0fc8f9fa9c3c6bdb1ed3f8a16de965c
         Type: PropertyType
         DataType: NodeId
       - Name: NodeClass
+        Id: g=ab6f440a1c4d49e664edddee55e179cb
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
   - Name: WriteDelay
+    Id: g=4e770dd731ac0fb71f0f7c3eff9b0860
     Type: BaseDataVariableType
     DataType: Duration
     ReferenceType: HasProperty
   - Name: DeltaObserverEnabled
+    Id: g=a69aa6c5347d7d295e7ce130e720ae91
     Type: BaseDataVariableType
     DataType: Boolean
     ReferenceType: HasProperty
     Value: true
 - Name: AlarmsRetentivityStorage
+  Id: g=5c1e56f2d3daacc6ef9dbc5798c81cd8
   Type: RetentivityStorage
   Children:
   - Name: Nodes
+    Id: g=d3aee0845c1131ecefeb942f577c556d
     Type: BaseObjectType
     Children:
     - Name: Node1
+      Id: g=641735e181bc3fb8ae45bcb5df662b24
       Type: NodePointer
       DataType: NodeId
       Value: "/Objects/CorsoBo3b/Alarms"
       Children:
       - Name: Kind
+        Id: g=c5d59f591a25c5067463104922ae8f16
         Type: PropertyType
         DataType: NodeId
       - Name: NodeClass
+        Id: g=250b909e2ede911f94963d5f22636ed4
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
   - Name: WriteDelay
+    Id: g=6191d67fe04737abfec077758724ceac
     Type: BaseDataVariableType
     DataType: Duration
     ReferenceType: HasProperty
   - Name: DeltaObserverEnabled
+    Id: g=e9db462a01e4a9dd0901682047b03788
     Type: BaseDataVariableType
     DataType: Boolean
     ReferenceType: HasProperty

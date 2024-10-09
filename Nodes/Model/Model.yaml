@@ -3,14 +3,17 @@ Id: g=5bf8bb71766121919b24712760703936
 Type: ModelCategoryFolder
 Children:
 - Name: Variable1
+  Id: g=6d86fa46616a59b19ae5df241a442a09
   Type: BaseDataVariableType
   DataType: Int32
 - File: LoggerVariables/LoggerVariables.yaml
 - File: RecipeVariables/RecipeVariables.yaml
 - Name: Temperatura
+  Id: g=cb704161e25b19f3ed92bbfbc07cbc28
   Type: BaseDataVariableType
   DataType: Float
 - Name: EngineeringUnitDictionary1
+  Id: g=876b0ea3756a12c4814a1af744b9975c
   Type: EngineeringUnitDictionary
   DataType: EngineeringUnitDictionaryItem
   ValueRank: OneDimension

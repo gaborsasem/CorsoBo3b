@@ -1,59 +1,74 @@
 Name: CorsoBo3b
+Id: g=7ba3e7bc131375c57e5a13757c644aa3
 Type: ProjectFolder
 Children:
 - Name: Localization
+  Id: g=3ba77798325bffce3cf2fd7c1dca7b15
   Type: PropertyGroup
   Children:
   - Name: Locales
+    Id: g=bdb0478ee02ed2e98f83366e78842dff
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US","it-IT","ru-RU"]
   - Name: LocaleFallbackList
+    Id: g=1b4a8528cf5751714b39f860f37e608e
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
   - Name: MeasurementSystemMap
+    Id: g=8250c93c3f8b3551630663e3350d27ab
     Type: BaseDataVariableType
     DataType: MeasurementSystemMapItem
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: [{"TypeId":{"Id":235,"Namespace":1},"Body":{"From":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4408652,"NamespaceIndex":0}},"InternationalSystemOfUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4408652,"NamespaceIndex":0}},"USCustomarySystem":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4408652,"NamespaceIndex":0}},"BritishImperialUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4604232,"NamespaceIndex":0}}}}]
 - Name: Authentication
+  Id: g=8bd1d9835798cbf5fa62f6cb26bcc2c0
   Type: PropertyGroup
   Children:
   - Name: DefaultUserFolder
+    Id: g=29fa6a6f5e85881bba96b4cb85e5f067
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/CorsoBo3b/Security/Users"
     Children:
     - Name: Kind
+      Id: g=841777277bf3f14a68fe30d0730947f8
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: AuthenticationMode
+    Id: g=faa7b60c8c98969f84b54f4f87b7e02e
     Type: BaseDataVariableType
     DataType: AuthenticationMode
 - Name: PasswordPolicy
+  Id: g=3786424fbd435790172b3e35f3da6feb
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
+    Id: g=7dd6f80f41f99fa84d96624429262192
     Type: BaseDataVariableType
     DataType: UInt16
   - Name: EnforcePasswordHistory
+    Id: g=6cc60a12adcd9ef84acda169c34138de
     Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
+    Id: g=02ce28dd19b6d9a6af87b443a074aa2c
     Type: BaseDataVariableType
     DataType: UInt16
   - Name: MinimumPasswordLength
+    Id: g=6ffd5f2afbde5741d3023d011a04ed11
     Type: BaseDataVariableType
     DataType: Byte
     Value: 8
 - Name: AlarmConfiguration
+  Id: g=517a284146332723e8042b1e15c22e71
   Type: PropertyGroup
 - File: UI/UI.yaml
 - File: Model/Model.yaml
@@ -71,11 +86,13 @@ Children:
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
 - Name: RecipeSchema1
+  Id: g=e6d859649663adbe838f67512ae2605b
   Type: Alias
   DataType: NodeId
   Value: "/Objects/CorsoBo3b/Recipes/RecipeSchema1/EditModel"
   Children:
   - Name: Kind
+    Id: g=ab055c73c85959556be30229065df913
     Type: PropertyType
     DataType: NodeId
     Value: "/Objects/CorsoBo3b/Recipes/RecipeSchema1/EditModel"

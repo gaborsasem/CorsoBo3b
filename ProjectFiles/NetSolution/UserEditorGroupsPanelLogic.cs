@@ -5,6 +5,9 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.WebUI;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class UserEditorGroupsPanelLogic : BaseNetLogic

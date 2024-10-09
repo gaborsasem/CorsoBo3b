@@ -1,4 +1,5 @@
 Name: Loggers
+Id: g=5130cbd3fc68ab30495a88643e68341a
 Type: LoggersCategoryFolder
 Children:
 - Name: DataLogger1
@@ -6,121 +7,150 @@ Children:
   Type: DataLogger
   Children:
   - Name: SamplingMode
+    Id: g=41a1a9646b95367e222e95d11ecffbed
     Type: PropertyType
     DataType: SamplingModeEnum
     Value: 1
   - Name: Store
+    Id: g=56e3b5f1aff06198407f999b44a63be9
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/CorsoBo3b/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
+      Id: g=bb5581054fc2e5154ed02f3863721693
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
+    Id: g=54eb40eb5e6f5fd93807142e466fcd42
     Type: BaseObjectType
     Children:
     - Name: LogVariable1
+      Id: g=3f2bada61533ef651318107e2fedab08
       Type: VariableToLog
       DataType: BaseDataType
       Children:
       - Name: LastValue
+        Id: g=bcdbf3082dcad9ec7ffc14eccad37e2d
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=18120a31a39700f463c823f0b6f7d9f8
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=cf50d85f9652427f54093434fa4b589e
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=93088834506a9fc9e502f8bb376dfea5
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/LoggerVariables/LogVariable1"
         Children:
         - Name: Mode
+          Id: g=ed8864e8b573e793c7e28aa329c96f3f
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
       - Name: DeadBandMode
+        Id: g=53e629b13b33396c1d4e2a18eaed7d53
         Type: PropertyType
         DataType: DeadBandModeEnum
     - Name: LogVariable2
+      Id: g=9b0cf8b3159eaf94ef47246c4f69ae6e
       Type: VariableToLog
       DataType: BaseDataType
       Children:
       - Name: LastValue
+        Id: g=05699a56bdf6e9c735c73b341d9b18d6
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=f3705ad98e1fa29bc39b314c4b8ff90e
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=f5f67540123497d68512d59f376063e9
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=f06c788c7d3e01cfb957cc49dcf4167d
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/LoggerVariables/LogVariable2"
         Children:
         - Name: Mode
+          Id: g=86c2631c4adbffeaeefc62e717c92c9c
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
     - Name: LogVariable3
+      Id: g=e063bfe61681c429f60c4f5add579f0b
       Type: VariableToLog
       DataType: BaseDataType
       Children:
       - Name: LastValue
+        Id: g=f86e84fb8adf255e99418891a50db2b5
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=650fef2486465b02cb3adef593ff5d72
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=96ba3265a79414d68117f167006856c2
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=12d6b5c68366fd8e396583243c84fd19
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/LoggerVariables/LogVariable3"
         Children:
         - Name: Mode
+          Id: g=7e86b5dda21fcd6eb1a916a2e80e982a
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
     - Name: LogVariable4
+      Id: g=0bd197728cec327300cf7f6fbfe49cf5
       Type: VariableToLog
       DataType: BaseDataType
       Children:
       - Name: LastValue
+        Id: g=695803b0628fb00ad57ab54db4ec4556
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=62010d31fee13adc81408be84ec42679
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=84623cacd25d282980dcaf4a38cf49dd
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=497c645aa4c27d2b427be278397074f0
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/LoggerVariables/LogVariable4"
         Children:
         - Name: Mode
+          Id: g=1afbedd2e830c2696071305590e3020b
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
@@ -128,10 +158,12 @@ Children:
     Target: ns=8;i=21
     Direction: Forward
   - Name: LogLocalTime
+    Id: g=eec50b5c110ef33c4a1abffb6511f3c9
     Type: PropertyType
     DataType: Boolean
     Value: true
   - Name: SamplingPeriod
+    Id: g=e24fc84d42b33784f4aa67e07e5f6bc0
     Type: PropertyType
     DataType: Duration
     Value: "0:00:00:0.5000000"

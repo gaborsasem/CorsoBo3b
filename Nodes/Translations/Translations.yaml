@@ -1,7 +1,9 @@
 Name: Translations
+Id: g=9d6833562019894f4417b8998735d218
 Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
+  Id: g=f47b0a07e69474a7cbf56ddaa3372d94
   Type: LocalizationDictionary
   DataType: String
   ValueRank: OneOrMoreDimensions
@@ -73,36 +75,46 @@ Children:
     ]
    }
 - Name: ImportAndExportTranslations
+  Id: g=bd4481ce473ea0b9fc31af79b9334757
   Type: NetLogic
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: BehaviourStartPriority
+    Id: g=8029a964686bc862ad505c6f15dc3835
     Type: BehaviourStartPriorityVariableType
     DataType: Byte
     Value: 180
   - Name: CSVPath
+    Id: g=fa3f8879130c9ff82aeaa6a395cad06f
     Type: BaseDataVariableType
     DataType: AbsoluteResourceUri
   - Class: Method
     Name: ExportTranslations
+    Id: g=c1c636d4d4a6493e90256cfafe1b409b
   - Class: Method
     Name: ImportTranslations
+    Id: g=3e640c6b4d393b3e98d4d3d408c32397
   - Name: CharacterSeparator
+    Id: g=092bd80a53c7de7dfe0b1a209fdd642f
     Type: BaseDataVariableType
     DataType: String
     Value: ","
   - Name: WrapFields
+    Id: g=a3db0b0fd90e12ba4c3a45a31bfd1f01
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: LocalizationDictionary
+    Id: g=6a01b43a7bb47e185017f2d8ac586cae
     Type: NodePointer
     DataType: NodeId
     Children:
     - Name: Kind
+      Id: g=11f8278bb71d0866f910281950a81b25
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"
   - Name: ns=4;LibraryReference
+    Id: g=05983d16abbb9cd330ca08877ec3b9b2
     Type: ObjectLibraryReference
     DataType: ObjectLibraryReferenceDataType
     Value: 

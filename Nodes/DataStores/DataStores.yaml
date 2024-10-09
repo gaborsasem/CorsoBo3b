@@ -1,4 +1,5 @@
 Name: DataStores
+Id: g=a8e0a04972354d0004b6a5fbb602d0f9
 Type: DataStoresCategoryFolder
 Children:
 - Name: EmbeddedDatabase1
@@ -6,6 +7,7 @@ Children:
   Type: SQLiteStore
   Children:
   - Name: Tables
+    Id: g=261f6976c0f6d7fdc4c284b87c8b4091
     Type: BaseObjectType
     Children:
     - Name: DataLogger1
@@ -25,27 +27,35 @@ Children:
         Target: ns=9;i=20
         Direction: Forward
       - Name: Columns
+        Id: g=86974b640d80e83846c7e57ab1eb4eb5
         Type: BaseObjectType
         Children:
         - Name: Timestamp
+          Id: g=1f6213a550068afd6e53bcfa91db97a1
           Type: StoreColumn
           DataType: UtcTime
         - Name: LocalTimestamp
+          Id: g=eb7877af95b7267a50d3f6aeb8ba1664
           Type: StoreColumn
           DataType: DateTime
         - Name: LogVariable1
+          Id: g=2a939ae0a918ac1810dff53d8a786da6
           Type: StoreColumn
           DataType: Int32
         - Name: LogVariable2
+          Id: g=0eec44d57107e8685be6c6586091eeb9
           Type: StoreColumn
           DataType: Int32
         - Name: LogVariable3
+          Id: g=6082e336a77c196bf40e71bafefd02cb
           Type: StoreColumn
           DataType: Int32
         - Name: LogVariable4
+          Id: g=78b4220125ee2ade2ff3024455a8197f
           Type: StoreColumn
           DataType: Int32
     - Name: RecipeSchema1
+      Id: g=ee15d93c9afbb6d9191d8976ef17ee8b
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -61,21 +71,27 @@ Children:
         Target: ns=9;i=20
         Direction: Forward
       - Name: Columns
+        Id: g=d542b5f1abcd6a895684fb8be1fdd95d
         Type: BaseObjectType
         Children:
         - Name: Name
+          Id: g=09d6ebed190335f17da40e4bc28cbad5
           Type: StoreColumn
           DataType: String
         - Name: /RecipeVariables/RecipeVar1
+          Id: g=c5d0038203d1011d810bf9b8f4e595dd
           Type: StoreColumn
           DataType: Int32
         - Name: /RecipeVariables/RecipeVar2
+          Id: g=d21ad855eddb3e76bbc939234f216be8
           Type: StoreColumn
           DataType: Int32
         - Name: /RecipeVariables/RecipeVar3
+          Id: g=d946f98b07749fb90ec7c310be18aed2
           Type: StoreColumn
           DataType: Int32
         - Name: /RecipeVariables/RecipeVar4
+          Id: g=671876a93dc95925cf9f0d316447aceb
           Type: StoreColumn
           DataType: Int32
   - Class: Reference
@@ -85,20 +101,24 @@ Children:
     Target: ns=10;i=33
     Direction: Forward
   - Name: MaxColumnNameLength
+    Id: g=64f12a2c6f4061f60ed25771095180ae
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: MaxColumnCount
+    Id: g=b34cc6c4559ad9401116a3f407ebd01f
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: DataTypeCompatibilityMap
+    Id: g=a5990175d6558eb00137f30d11658d46
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
   - Name: Status
+    Id: g=b17cce76566edb61190839bd6c7356b0
     Type: PropertyType
     DataType: StoreStatus
     AccessLevel: Read
@@ -137,6 +157,7 @@ Children:
     Target: ns=9;i=59
     Direction: Forward
   - Name: Filename
+    Id: g=dfa79c7188d8f0c346d8dbcf8b6a87b2
     Type: BaseDataVariableType
     DataType: String
     Value: "mioDatabase"

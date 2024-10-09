@@ -91,16 +91,40 @@ Project:
    Uri: 'urn:FTOptix:Recipe:Net'
    Module: FTOptix.Recipe.Net
    Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 2.1
+  24:
+   Uri: 'urn:FTOptix:CommunicationDriver:Net'
+   Module: FTOptix.CommunicationDriver.Net
+   Version: 2.1
+  25:
+   Uri: 'urn:FTOptix:Modbus'
+   Module: FTOptix.Modbus
+   Version: 1.0
+  26:
+   Uri: 'urn:FTOptix:Modbus:Net'
+   Module: FTOptix.Modbus.Net
+   Version: 1.0
+  27:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.1
+  28:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 1.1
  Statistics:
-  TotalNodeCount: 2766
-  Objects: 553
+  TotalNodeCount: 2802
+  Objects: 565
   ObjectTypes: 21
-  Variables: 2171
+  Variables: 2194
   VariableTypes: 0
   DataTypes: 0
-  Methods: 21
-  References: 59
+  Methods: 22
+  References: 65
   ReferenceTypes: 0
-  Files: 26
+  Files: 31
  Nodes:
  - File: Nodes/CorsoBo3b.yaml

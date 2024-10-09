@@ -10,6 +10,9 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.Core;
 using FTOptix.Recipe;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class ImportAndExportTranslations : BaseNetLogic

@@ -1,4 +1,5 @@
 Name: Recipes
+Id: g=dc605b4a249d79ea06679be38a4bc86f
 Type: RecipesCategoryFolder
 Children:
 - Name: RecipeSchema1
@@ -6,21 +7,27 @@ Children:
   Type: RecipeSchema
   Children:
   - Name: Root
+    Id: g=f4fa9f38cbd1ad6154ce82c47cfd924a
     Type: BaseObjectType
     Children:
     - Name: RecipeVariables
+      Id: g=b29c3af2ca60d2675b61d4a1656898c6
       Type: BaseObjectType
       Children:
       - Name: RecipeVar1
+        Id: g=108a2d3b268f94ba43f466885ec000ee
         Type: BaseDataVariableType
         DataType: Int32
       - Name: RecipeVar2
+        Id: g=c6d843ad77d40fd0bb3e7964e699d53f
         Type: BaseDataVariableType
         DataType: Int32
       - Name: RecipeVar3
+        Id: g=e8bc3799a61ec628347aeab3a961d463
         Type: BaseDataVariableType
         DataType: Int32
       - Name: RecipeVar4
+        Id: g=7a17931d56bf7890aa7eabdb5571794a
         Type: BaseDataVariableType
         DataType: Int32
   - Class: Reference
@@ -60,23 +67,28 @@ Children:
     Target: ns=21;i=60
     Direction: Forward
   - Name: Store
+    Id: g=693ed9ddec671b06b1098ccb323e9b15
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/CorsoBo3b/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
+      Id: g=29d49860e0040fdf94c9136fcea10689
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: TableName
+    Id: g=ee0d4e559be0d2156c6c17ecc265a21b
     Type: BaseDataVariableType
     DataType: String
   - Name: TargetNode
+    Id: g=e34264853456d26cffd129ca13103d30
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/CorsoBo3b/Model"
     Children:
     - Name: Kind
+      Id: g=f1722e4f2de3f901af077fe3eee3d8de
       Type: PropertyType
       DataType: NodeId
   - Name: EditModel
@@ -84,17 +96,22 @@ Children:
     Type: BaseObjectType
     Children:
     - Name: RecipeVariables
+      Id: g=53f50472da03990c73ae01fa9c3b2248
       Type: BaseObjectType
       Children:
       - Name: RecipeVar1
+        Id: g=ab2a064a1e1d578b4abaf94d7cbd9288
         Type: BaseDataVariableType
         DataType: Int32
       - Name: RecipeVar2
+        Id: g=b31f4947d626369f5a5c28403153a895
         Type: BaseDataVariableType
         DataType: Int32
       - Name: RecipeVar3
+        Id: g=6920af2f0a729ed76ed183c5adeb3bfb
         Type: BaseDataVariableType
         DataType: Int32
       - Name: RecipeVar4
+        Id: g=84f5138fd2e130d9e4370e3d20c0cbde
         Type: BaseDataVariableType
         DataType: Int32

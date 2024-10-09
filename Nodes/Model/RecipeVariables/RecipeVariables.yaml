@@ -1,15 +1,20 @@
 Name: RecipeVariables
+Id: g=8b3612dc5dfd432f0a7e91ce315f643c
 Type: FolderType
 Children:
 - Name: RecipeVar1
+  Id: g=a17b32fb7269daf3bf3b5133e5dae490
   Type: BaseDataVariableType
   DataType: Int32
 - Name: RecipeVar2
+  Id: g=e050392e71e141f74f397529737b4743
   Type: BaseDataVariableType
   DataType: Int32
 - Name: RecipeVar3
+  Id: g=afcda00f093fa1e96490b2ae5d5eede5
   Type: BaseDataVariableType
   DataType: Int32
 - Name: RecipeVar4
+  Id: g=47847762c8a3739d4acdba0a18db149b
   Type: BaseDataVariableType
   DataType: Int32

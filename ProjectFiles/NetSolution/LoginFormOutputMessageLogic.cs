@@ -7,6 +7,8 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.OPCUAServer;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class LoginFormOutputMessageLogic : BaseNetLogic

@@ -1,15 +1,20 @@
 Name: LoggerVariables
+Id: g=f0fb1ff6a233f0f110c5ace03618e028
 Type: FolderType
 Children:
 - Name: LogVariable1
+  Id: g=8020b66508ba87f277fa7530ce4c6607
   Type: BaseDataVariableType
   DataType: Int32
 - Name: LogVariable2
+  Id: g=63c8aa8d059e4e6f27401a4dab254573
   Type: BaseDataVariableType
   DataType: Int32
 - Name: LogVariable3
+  Id: g=0bb21e9b198b89dba83a1c4a10cac1a1
   Type: BaseDataVariableType
   DataType: Int32
 - Name: LogVariable4
+  Id: g=3ba3a3df0c40cb1c94dd0583fa3fc54c
   Type: BaseDataVariableType
   DataType: Int32

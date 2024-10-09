@@ -1,4 +1,5 @@
 Name: MyWidget
+Id: g=1b5866c796b827bf49fa9f46ced87b65
 Type: FolderType
 Children:
 - Name: DisplayUnitaMisura
@@ -7,75 +8,99 @@ Children:
   ReferenceType: HasComponent
   Children:
   - Name: SpinBox1
+    Id: g=bfd1394ddb5f5f21b3380d15fe8841ca
     Type: SpinBox
     Children:
     - Name: Value
+      Id: g=666fe2d10fea111f7b777a4dc65e00b9
       Type: BaseDataVariableType
       DataType: Double
       Children:
       - Name: DynamicLink
+        Id: g=36465b8b71b9cf0b9e3fd2088bd21255
         Type: DynamicLink
         DataType: NodePath
         Value: "../../AnalogVariable1"
         Children:
         - Name: Mode
+          Id: g=57544c58f51ccaaff15dd315310f07c9
           Type: BaseVariableType
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
         - Name: EUMode
+          Id: g=3eb718ab37bc25ba98aadad52b0835fe
           Type: BaseVariableType
           DataType: DynamicLinkEUMode
     - Name: Width
+      Id: g=40977a4c471f0f573ce16606e2f5eecf
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 80.0
   - Name: Label1
+    Id: g=3fb384ba79266eed40488d7228ff51bf
     Type: Label
     Children:
     - Name: Text
+      Id: g=ea1ef5671123a56aec5595625821963a
       Type: BaseDataVariableType
       DataType: LocalizedText
       Children:
       - Name: DynamicLink
+        Id: g=d05d047f8a3b7001747016d1695d3980
         Type: DynamicLink
         DataType: NodePath
         Value: "../../AnalogVariable1/EngineeringUnits/DisplayName"
         Children:
         - Name: EUMode
+          Id: g=65e21a400f5d3bc178a27ea7970728e5
           Type: BaseVariableType
           DataType: DynamicLinkEUMode
+    - Name: VerticalAlignment
+      Id: g=6489bd9fb51a51570a7a10ef4310b4b6
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
   - Name: AnalogVariable1
+    Id: g=d89ee5381da6766677bf2286b0545d4f
     Type: AnalogItemType
     DataType: Float
     Children:
     - Name: EURange
+      Id: g=4329bedd4f475a6879033a562956ebfb
       Type: RangeType
       DataType: Range
       Children:
       - Name: Low
+        Id: g=bd9985a9839d77470d55e48d9e255c0a
         Type: BaseVariableType
         DataType: Double
         ReferenceType: HasProperty
       - Name: High
+        Id: g=54ba6131ed4fcd67cac181a6d4d7bfd6
         Type: BaseVariableType
         DataType: Double
         ReferenceType: HasProperty
     - Name: EngineeringUnits
+      Id: g=cc37d61e16304ede716c9af78f7f64d6
       Type: EUInformationType
       DataType: EUInformation
       Children:
       - Name: UnitId
+        Id: g=c8870c7ddefdf1d8fc9d9509e4d8c9f4
         Type: BaseVariableType
         DataType: Int32
         ReferenceType: HasProperty
         Value: -1
       - Name: DisplayName
+        Id: g=c1a895add95610a61fee3dec88da4d83
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
       - Name: Description
+        Id: g=335d4a172e5d3a3edda52ff6fcd6f898
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty

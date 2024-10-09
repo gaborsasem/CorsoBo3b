@@ -7,6 +7,9 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.WebUI;
 using System.Linq;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class EditUserDetailPanelLogic : BaseNetLogic

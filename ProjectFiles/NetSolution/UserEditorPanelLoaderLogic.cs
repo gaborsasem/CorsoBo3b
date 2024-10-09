@@ -3,6 +3,9 @@ using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.WebUI;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class UserEditorPanelLoaderLogic : BaseNetLogic

@@ -1,4 +1,5 @@
 Name: NetLogic
+Id: g=a59547c53cbeba1679ab7d42f8399618
 Type: NetLogicCategoryFolder
 Children:
 - Name: DataLoggerExporter
@@ -7,103 +8,127 @@ Children:
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: CSVPath
+    Id: g=5adc40b987f3dc976caf32d113c9ed75
     Type: BaseDataVariableType
     DataType: AbsoluteResourceUri
     Value: "file:///C:/Users/GOrsani/OneDrive - Rockwell Automation, Inc/Documents/Progetti Optix/1_4/CorsoBo3b/ProjectFiles/myLog.csv"
     Children:
     - Name: StringFormatter1
+      Id: g=57f76bdac2e0c53fd790f8f54c684b74
       Type: StringFormatter
       Children:
       - Name: Format
+        Id: g=9221caca66e06a4951b68e56a6427357
         Type: BaseDataVariableType
         DataType: LocalizedText
         ReferenceType: HasParameter
         Value: {"LocaleId":"en-US","Text":"C:\\Users\\GOrsani\\OneDrive - Rockwell Automation, Inc\\Documents\\Progetti Optix\\1_4\\CorsoBo3b\\ProjectFiles\\myLog{0}_{1}_{2}.csv"}
       - Name: ns=2;Source0
+        Id: g=86b97647bce5dc07ab04350d25d7d47e
         Type: BaseDataVariableType
         DataType: BaseDataType
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=16a3318ede12bb8aa4382cdfcbb25483
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../../ClockLogic/Time/Year"
       - Name: ns=2;Source1
+        Id: g=7bbb5f643c2e40e8f17da7de2f77c3ae
         Type: BaseDataVariableType
         DataType: BaseDataType
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=fe5c3438211ff90dec7e591e4aa1392a
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../../ClockLogic/Time/Month"
       - Name: ns=2;Source2
+        Id: g=e6d3aa7448e3388f814f55f1241ba734
         Type: BaseDataVariableType
         DataType: BaseDataType
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=639b60c402d9683a16b17f2593da9406
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../../ClockLogic/Time/Day"
   - Name: FieldDelimiter
+    Id: g=8fcd9185ed35cc1ef1479ffcd79a47cf
     Type: BaseDataVariableType
     DataType: String
     Value: ";"
   - Name: Table
+    Id: g=9007fd88be0defd651437687e5a73148
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/CorsoBo3b/DataStores/EmbeddedDatabase1/Tables/DataLogger1"
     Children:
     - Name: Kind
+      Id: g=e56538628a76b1dc7951da63b694a8fa
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Class: Method
     Name: Export
+    Id: g=19f0dfee7c21763463ca5d6e3af37329
   - Name: Query
+    Id: g=6bdd0cb9bf2b813c7035c217611c3fa9
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
     Children:
     - Name: StringFormatter1
+      Id: g=b73f391d459f591e8c1f8236b4253c1a
       Type: StringFormatter
       Children:
       - Name: Format
+        Id: g=e688a68745cfc81c650d323de669238f
         Type: BaseDataVariableType
         DataType: LocalizedText
         ReferenceType: HasParameter
         Value: {"LocaleId":"en-US","Text":"Timestamp BETWEEN {1:sql_literal} AND {2:sql_literal}"}
       - Name: Source1
+        Id: g=e14709dca0b84c858bfbfe8ba1c96e6a
         Type: BaseDataVariableType
         DataType: BaseDataType
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=a30422ef3324f71ee33eba47489c28a9
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../From"
       - Name: Source2
+        Id: g=04e6d8b45318af510e2b65996529b1b7
         Type: BaseDataVariableType
         DataType: BaseDataType
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=e15c60774540e9c643e28d596a45a2f7
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../To"
   - Name: From
+    Id: g=393e5723bf7d0958ed4988050baed82e
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "2024-01-01T00:00:00.0000000"
   - Name: To
+    Id: g=a03c676673ff745ffc54a7a155e9a7bb
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "2024-12-31T00:00:00.0000000"
   - Name: WrapFields
+    Id: g=64e20a407fd48e77a65d4c18071747d3
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: ns=4;LibraryReference
+    Id: g=8c3077e5fc9ca9ee0131a4169d871a04
     Type: ObjectLibraryReference
     DataType: ObjectLibraryReferenceDataType
     Value: 
@@ -120,54 +145,70 @@ Children:
       }
      }
 - Name: ClockLogic
+  Id: g=5f825e1def2e5f379f98c510677697e5
   Type: NetLogic
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: Time
+    Id: g=2cea191ab8fda5223fb71d1542440cfe
     Type: BaseDataVariableType
     DataType: DateTime
     Children:
     - Name: Year
+      Id: g=902c7f80e6db756e1835188b0916fa45
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Month
+      Id: g=537dcfada7d15e75682abcd39707ef98
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Day
+      Id: g=8bdeb4087575c86f3a3b8e47cd2dd33f
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Hour
+      Id: g=477e6274135d0b14e8afbf7e6c9f0f9f
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Minute
+      Id: g=4991bfcda75f289cb3ee64db80371ce7
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Second
+      Id: g=b825c4ce70c154b5d765ada18628e008
       Type: BaseDataVariableType
       DataType: Int32
   - Name: UTCTime
+    Id: g=ce7b800bac5c9f76aad1f588a0dae8b0
     Type: BaseDataVariableType
     DataType: DateTime
     Children:
     - Name: Year
+      Id: g=fe0cb5f44c7e0675e80a06d32ad3848e
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Month
+      Id: g=6f05f89043c24199e65db92da8f7e8a9
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Day
+      Id: g=fb9f0e987de60fa58f5ce5eb314c89c5
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Hour
+      Id: g=e850ef91d252c027ee5eb6854609218d
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Minute
+      Id: g=141fa5647c081c9cdd002ee88b22f28f
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Second
+      Id: g=5fbc00cd12872865af0279171c9e727f
       Type: BaseDataVariableType
       DataType: Int32
   - Name: ns=4;LibraryReference
+    Id: g=2834b61383d78f4a884d3fe848bb49ce
     Type: ObjectLibraryReference
     DataType: ObjectLibraryReferenceDataType
     Value: 
@@ -184,79 +225,114 @@ Children:
       }
      }
   - Name: TimeMinuteChanged
+    Id: g=2644a8468909c501323af1e9c41fcc74
     Type: VariableChangedEventDispatcher
     Children:
     - Name: VariableNodePath
+      Id: g=9f6b04a6d6b768922afb6f43622dbf99
       Type: BaseVariableType
       DataType: NodePath
       Value: "../Time/Minute"
     - Name: VariableValueChangedEventHandler1
+      Id: g=4bbbd7734e9b43a4fb6e2c40744ea868
       Type: EventHandler
       Children:
       - Name: ListenEventType
+        Id: g=2823ae1a814fbd0e7bc06383f6b8efe7
         Type: PropertyType
         DataType: NodeId
         Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
       - Name: MethodsToCall
+        Id: g=2412e7eedefa601ea876affc3df4f9b2
         Type: BaseObjectType
         Children:
         - Name: MethodContainer1
+          Id: g=85e4f0b973fbf59e19c9f7ccac13cd15
           Type: BaseObjectType
           Children:
           - Name: ns=2;ObjectPointer
+            Id: g=9e18821c8344ccc62cb2f93cb012e830
             Type: NodePointer
             DataType: NodeId
             Children:
             - Name: Kind
+              Id: g=a5be3b4794c674b8a255dc9b5e1a1bd2
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
+              Id: g=52b4a28636343c96b5ab3f2b556ffe8d
               Type: DynamicLink
               DataType: NodePath
               Value: "../../../../../../DataLoggerExporter@NodeId"
               Children:
               - Name: Mode
+                Id: g=c3d90b33453463912c6e0b377b9331dc
                 Type: BaseVariableType
                 DataType: DynamicLinkMode
                 Value: 2
           - Name: ns=2;Method
+            Id: g=379494d9818026f296cce27360eea656
             Type: BaseDataVariableType
             DataType: String
             Value: "Export"
       - Name: EventArguments
+        Id: g=ba77496835b93abd63193fe3a031bd9a
         Type: VariableValueChangedEvent
         Children:
         - Name: VariableNodeId
+          Id: g=c40acbb65c7b0c524a0e26d574007a46
           Type: BaseVariableType
           DataType: NodeId
         - Name: NewValue
+          Id: g=0c6dce75e9f7694ad610832062dfafe1
           Type: BaseVariableType
           DataType: BaseDataType
         - Name: OldValue
+          Id: g=ec59f74ef501385b6f25ebcbad3b51ef
           Type: BaseVariableType
           DataType: BaseDataType
         - Name: EventId
+          Id: g=764916a3beeb1c3bc1eee83823be893c
           Type: PropertyType
           DataType: ByteString
         - Name: EventType
+          Id: g=f8b2ba60f0046a0154064a3ec6d67ceb
           Type: PropertyType
           DataType: NodeId
         - Name: SourceNode
+          Id: g=3a2d930958f510e86f52f1cafed86ff9
           Type: PropertyType
           DataType: NodeId
         - Name: SourceName
+          Id: g=38650a54c6df7e0cb8b4a863b4ce4e4d
           Type: PropertyType
           DataType: String
         - Name: Time
+          Id: g=ef33cd7124a68d60c464bd153f712625
           Type: PropertyType
           DataType: UtcTime
         - Name: ReceiveTime
+          Id: g=1709d8eb08ae4f1604e48a0c972d09c0
           Type: PropertyType
           DataType: UtcTime
         - Name: Message
+          Id: g=ea0233481d2599172a40995ee230a9ae
           Type: PropertyType
           DataType: LocalizedText
         - Name: Severity
+          Id: g=3158e15407b91631cefee67e31c1739b
           Type: PropertyType
           DataType: UInt16
+- Name: LinksManager
+  Id: g=1c036aa1c1a3406e480b853adc713d9a
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=4ab5f402de20bb4a8cbcd3054ea107c0
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: GetBrokenDynamicLinks
+    Id: g=5cffc02077868c72d208a425b3ef40b1
