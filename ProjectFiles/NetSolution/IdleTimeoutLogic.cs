@@ -11,6 +11,10 @@ using FTOptix.CoreBase;
 using FTOptix.NetLogic;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
+using FTOptix.WebUI;
+using FTOptix.SerialPort;
+using FTOptix.System;
 #endregion
 
 public class IdleTimeoutLogic : BaseNetLogic

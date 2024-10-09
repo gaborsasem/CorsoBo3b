@@ -10,6 +10,10 @@ using FTOptix.Recipe;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
 using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
+using FTOptix.WebUI;
+using FTOptix.SerialPort;
+using FTOptix.System;
 #endregion
 
 public class ClockLogic : BaseNetLogic

@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [59,4],
+    "Dimensions": [72,4],
     "Body": [
      "","en-US","it-IT","ru-RU",
      "RecipesEditorStoreOfSchema","Store of schema","","",
@@ -71,7 +71,20 @@ Children:
      "ChangesAppliedSuccessfully","Changes applied successfully","","",
      "hello","hello","ciao","привет",
      "HELLO","HELLO","","",
-     "test","test","",""
+     "test","test","","",
+     "DateAndTime","Date and time","Data e ora","",
+     "TimeSynchronizationMode","Synchronization mode","Modalità sincronizzazione","",
+     "TimeZone","Time zone","Fuso orario","",
+     "AutoMode","Auto (Remote NTP server)","Automatica (Server NTP remoto)","",
+     "LocalNTPServerInterfaces","Local NTP server interfaces","Interfacce server NTP locali","",
+     "Reboot","Reboot","Riavvia","",
+     "LAN","LAN","LAN","",
+     "WAN","WAN","WAN","",
+     "RebootToCommitChanges","Reboot to commit changes","Riavviare per applicare le modifiche","",
+     "RemoteNTPServer","Remote NTP server","Server NTP remoto","",
+     "PLCaddress","PLC address","Indirizzo PLC","",
+     "PLC","Auto (PLC)","Automatico (PLC)","",
+     "ManualMode","Manual","Manuale",""
     ]
    }
 - Name: ImportAndExportTranslations
