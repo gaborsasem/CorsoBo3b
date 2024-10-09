@@ -7,3 +7,12 @@ Children:
   DataType: Int32
 - File: LoggerVariables/LoggerVariables.yaml
 - File: RecipeVariables/RecipeVariables.yaml
+- Name: Temperatura
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: EngineeringUnitDictionary1
+  Type: EngineeringUnitDictionary
+  DataType: EngineeringUnitDictionaryItem
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: [{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":0,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"PhysicalDimension":1,"Slope":0.0,"Intercept":0.0}}]

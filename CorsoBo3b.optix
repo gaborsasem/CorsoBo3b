@@ -92,15 +92,15 @@ Project:
    Module: FTOptix.Recipe.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 1240
-  Objects: 257
-  ObjectTypes: 4
-  Variables: 969
+  TotalNodeCount: 2766
+  Objects: 553
+  ObjectTypes: 21
+  Variables: 2171
   VariableTypes: 0
   DataTypes: 0
-  Methods: 10
-  References: 41
+  Methods: 21
+  References: 59
   ReferenceTypes: 0
-  Files: 22
+  Files: 26
  Nodes:
  - File: Nodes/CorsoBo3b.yaml
