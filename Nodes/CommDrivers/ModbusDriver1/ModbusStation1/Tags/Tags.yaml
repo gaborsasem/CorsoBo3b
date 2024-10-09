@@ -1,3 +1,36 @@
 Name: Tags
 Id: g=bbd96122d2ef5c17ba1c2219a4452bd1
 Type: FolderType
+Children:
+- Name: ModbusTag1
+  Id: g=1710b112bc0243830c07cb06650c50ee
+  Type: ModbusTag
+  DataType: Int16
+- Name: ModbusTag2
+  Id: g=d103312687f6d58143db307b46c138a2
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Id: g=79ebd8d7c5ce0cdcd0656c4edf16d05e
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+- Name: ModbusTag2Transitioned
+  Id: g=2c1a4aa1352dd5b002ea6e3e99719f3e
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Id: g=2274d95f197e24031ce90725bf76590e
+    Type: BaseVariableType
+    DataType: Double
+    Value: 2.0
+  - Name: Transition
+    Id: g=9afebd49ea8b13361fb3d0717a204390
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Id: g=76ecfe25542722307b8e8ca05845cf76
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../ModbusTag2"

@@ -336,3 +336,39 @@ Children:
   - Class: Method
     Name: GetBrokenDynamicLinks
     Id: g=5cffc02077868c72d208a425b3ef40b1
+- Name: DesignTimeNetLogic1
+  Id: g=742eb99f54fe55b0cda45a9de57226e9
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=ceefe24bcf7a6c8657a832713ef75453
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: MioMetodoTest
+    Id: g=e6fa626c54eb72ede63aae499df00a0e
+  - Name: NumeroAllarmi
+    Id: g=0dbfa32f2523ca05349d0614b266e79d
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+  - Class: Method
+    Name: EliminaAllarmi
+    Id: g=967d2b52e2920b9afb1c6f82aa4b7303
+- Name: RuntimeNetLogic1
+  Id: g=b84462d0999bb0f8186491d34d10d2a7
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: LogCustom
+    Id: g=19ba1fb4e063a4724067206958f4110a
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=94cd59c6dde24efb2de0ccf7284f69eb
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"messaggio","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

@@ -10,6 +10,9 @@ using System.Linq;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
 using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
+using FTOptix.SerialPort;
+using FTOptix.System;
 #endregion
 
 public class EditUserDetailPanelLogic : BaseNetLogic

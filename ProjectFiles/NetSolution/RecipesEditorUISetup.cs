@@ -17,6 +17,10 @@ using FTOptix.Store;
 using FTOptix.CommunicationDriver;
 using FTOptix.Modbus;
 using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
+using FTOptix.WebUI;
+using FTOptix.SerialPort;
+using FTOptix.System;
 #endregion
 
 public class RecipesEditorUISetup : BaseNetLogic

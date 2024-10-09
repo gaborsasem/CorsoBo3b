@@ -31,6 +31,7 @@ Children:
   Id: g=0ce5034c7bf87f926cfdabd067a275b0
   Type: BaseDataVariableType
   DataType: String
+  Value: "127.0.0.1"
 - Name: Port
   Id: g=6848f1a54cf94353dfe9aa9ae895bab8
   Type: BaseDataVariableType

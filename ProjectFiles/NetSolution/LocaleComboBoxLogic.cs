@@ -9,6 +9,10 @@ using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
+using FTOptix.WebUI;
+using FTOptix.SerialPort;
+using FTOptix.System;
 #endregion
 
 public class LocaleComboBoxLogic : BaseNetLogic

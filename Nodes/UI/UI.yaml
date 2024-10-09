@@ -274,6 +274,144 @@ Children:
   - Name: Sessions
     Id: g=637d1ab749343c6a02abcbedd8e242e1
     Type: BaseObjectType
+- Name: WebPresentationEngine
+  Id: g=f2fa5e184f2ec4d1a771a3309c930f32
+  Type: ns=31;PresentationEngine
+  Children:
+  - Name: Protocol
+    Id: g=7a0c5caf33d9b5c6af45a14c579ad658
+    Type: BaseDataVariableType
+    DataType: Protocol
+  - Name: IPAddress
+    Id: g=cb9d5aab26a69cec94754abe0e3cf4d5
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0.0.0.0"
+  - Name: Port
+    Id: g=05a647425b0887b7dd38e9b6ba3b88e5
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8080
+  - Name: StartWindow
+    Id: g=6f5b48196aec348652c5f1c7408bad63
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoBo3b/UI/MainWindow"
+    Children:
+    - Name: Kind
+      Id: g=6f81351f18ddd6e238ee39fac61c65e4
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
+  - Name: StyleSheet
+    Id: g=777eaa857a2ff8d6d4d5c44c7faeadb6
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoBo3b/UI/DefaultStyleSheet"
+    Children:
+    - Name: Kind
+      Id: g=033f369c317eac47bc725cc803469db5
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: StartingUser
+    Id: g=7a196293fedaed753c93593bb89d49fb
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Users/Anonymous"
+    Children:
+    - Name: Kind
+      Id: g=b79af387424ebec338abd0ee744cffe4
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: Sessions
+    Id: g=8df5f99598d8c4a7bd62c81055e076df
+    Type: BaseObjectType
+    Children:
+    - Name: Session1
+      Id: g=58ff317c50669be957138e8cd0d70636
+      Type: UISession
+      Children:
+      - Name: IsInteractive
+        Id: g=e76575dca8382dc4b1bfc6638e45a08f
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: true
+      - Name: IsNative
+        Id: g=403d4c8a83b41e3c8a52e75d28abd51e
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+      - Name: IsWeb
+        Id: g=719851b98c6ab17b521779d07c934c88
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+      - Name: IpAddress
+        Id: g=193c3a4a9487ef2332ce06d84a4f0d79
+        Type: BaseDataVariableType
+        DataType: String
+        AccessLevel: Read
+      - Name: User
+        Id: g=856a0a778fe75148b663239e123de702
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Children:
+        - Name: Kind
+          Id: g=bc6ea9507c3bb088dd97a11069d84254
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+      - Name: ActualLocaleId
+        Id: g=10b158809a367815ad77b679eeabd373
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+      - Name: ActualLanguage
+        Id: g=9f5ab858ffe903f98e60e517a9e7a614
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+      - Name: ActualMeasurementSystem
+        Id: g=60ec67bb862362d23da5ae7e66957ec4
+        Type: BaseVariableType
+        DataType: MeasurementSystem
+        ReferenceType: HasProperty
+      - Name: TimeZoneOffset
+        Id: g=45243363d37bf6cd1daf2010eb49662c
+        Type: BaseVariableType
+        DataType: TimeZoneDataType
+        ReferenceType: HasProperty
+        AccessLevel: Read
+      - Name: Groups
+        Id: g=7bfb985af980fbd46ed5b44cb6fbb775
+        Type: BaseObjectType
+      - Name: Roles
+        Id: g=08c9fca035e27c031e0fb1dbc1c99974
+        Type: BaseObjectType
+      - Name: Rights
+        Id: g=acd5d7ff5014886bb25949881b34132b
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=1;i=146
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=266
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=269
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=272
+        Direction: Forward
+      - Name: LoggedIn
+        Id: g=a07c04a5e8806a8fb22e70dd275ad368
+        Type: BaseVariableType
+        DataType: Boolean
+        AccessLevel: Read
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -422,6 +560,25 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel7
+        Id: g=b83302b71078be29b49ccfdc6ccc069f
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=0cab61cd050c279803fb25139a0094c4
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Id: g=0c16eff49858a0781553c8c22d2abc37
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/CorsoBo3b/UI/Screens/Script"
+          Children:
+          - Name: Kind
+            Id: g=d691874fc99e3c0d3b7c23bec7aac413
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: CurrentPanel
       Id: g=e92160c0afd9c65a07d436ed89dce338
       Type: NodePointer
@@ -547,6 +704,161 @@ Children:
          "highestIgnoredVersion": 0
         }
        }
+  - Name: OpenPopupDaScript
+    Id: g=ab0c49e9cf64f37c07a7f3be72a9e8c4
+    Type: NetLogic
+  - Name: AperturaPopUp
+    Id: g=0a2546211b694654f9bcb9a3e37839fd
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Id: g=8c5251cb53a7cc19cc2e44ddbbe97113
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/CorsoBo3b/CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag2"
+      Children:
+      - Name: Mode
+        Id: g=14a7c20a3e88a0d276371129485ca702
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: AperturaPopUpTransitioned
+    Id: g=9e48a581c959d028fd6d65f7191cf3ce
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Id: g=75d8ba9f708ab2a10725f6aef31932fd
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Id: g=0e4903e50ac0b0f20a6760f25193fd20
+      Type: BaseVariableType
+      DataType: VariableTransition
+    - Name: VariableNodePath
+      Id: g=eade1b155e30de63fc8610b77f80590e
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../AperturaPopUp"
+    - Name: VariableTransitionEventHandler1
+      Id: g=de9e58d8966bb7dc4841e20fa67f355c
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=7735b32891de97df9b5ef429bc1e39b5
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
+      - Name: MethodsToCall
+        Id: g=d1f9f12730a057985d590a6858c691c8
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=8c6723c5b70c12872b30caa248406077
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Id: g=4d1e25c3101d319dedcc36b6fb5a8d7a
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/UICommands"
+            Children:
+            - Name: Kind
+              Id: g=ba03ece5ba3007aeca1cb6a9814fb999
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=2;Method
+            Id: g=a86120b194d8d68f0ec6292e3af7b2c3
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "OpenDialog"
+          - Name: InputArguments
+            Id: g=cc3bbe4676c0a1558703dd7539c02131
+            Type: BaseObjectType
+            Children:
+            - Name: Dialog
+              Id: g=316bd8668c058d3a32cb82b216d5661f
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogDescription"}
+              Value: "/Objects/CorsoBo3b/UI/MyWidget/PopUp"
+            - Name: AliasNode
+              Id: g=63392e368b9fb764e9569edebdbd0995
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"OpenDialogAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+            - Name: ParentItem
+              Id: g=6d79579a96894fe592d74d2b77513e8b
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"OpenDialogParentItemDescription"}
+              Children:
+              - Name: DynamicLink
+                Id: g=3723699602e61174cfb8920352c95cdd
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../..@NodeId"
+          - Name: OutputArguments
+            Id: g=490f6310a437bad65d58961212399b7f
+            Type: BaseObjectType
+            Children:
+            - Name: DialogNodeId
+              Id: g=464366d51872a661f7a64ae88bf2cfd5
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogNodeIdDescription"}
+      - Name: EventArguments
+        Id: g=cbc73fcd926eac086a623120b6b5f0ff
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Id: g=f50cb93d8fa70f5ee8d96c2718a58ce9
+          Type: BaseVariableType
+          DataType: NodeId
+        - Name: NewValue
+          Id: g=d9b7080566bc62867877a5f0dcf5c748
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Id: g=056774c8ddfbcc84c831a9890cc898ec
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Id: g=8526b2201840c11b80ad6390822596b3
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Id: g=4bdfcec5e3522775c54e64591a95585f
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Id: g=0b455b1a7daf37de6288a1711e87976b
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Id: g=7e4ad7e0af6fe9639764b7ea47b993b0
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Id: g=d02de6b352e3ec7ed864ccf066742154
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Id: g=233e513e361c47d230dfac2767e748d6
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Id: g=2c2f188cfacaa8b439ba74720024ebe7
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Id: g=e6c73cb7aaa3a6b144881a1f47dabf9e
+          Type: PropertyType
+          DataType: UInt16
 - File: Screens/Screens.yaml
 - File: LoginForm/LoginForm.yaml
 - File: MyWidget/MyWidget.yaml
