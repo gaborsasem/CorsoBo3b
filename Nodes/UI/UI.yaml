@@ -859,6 +859,34 @@ Children:
           Id: g=e6c73cb7aaa3a6b144881a1f47dabf9e
           Type: PropertyType
           DataType: UInt16
+  - Name: Label1
+    Id: g=729f1b75b5a40979715ca1049eab2ea0
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=7a7fd699c77bbad75e9a539718248d89
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Alessio"}
+    - Name: LeftMargin
+      Id: g=fb2c19b7e9233651f3543b07ae4e0866
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: TopMargin
+      Id: g=1eae381c37bbeff21e30fb8043fe681e
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 656.0
+    - Name: FontSize
+      Id: g=c350e360c1f2e3dffab2f3153cefdd83
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
 - File: Screens/Screens.yaml
 - File: LoginForm/LoginForm.yaml
 - File: MyWidget/MyWidget.yaml
